@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>raval's kitchen</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100..700;1,100..700&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+
+    <div class="gb">
+        <div class="logo">
+            <img src="image/logo (2).png" alt="">
+        </div>
+        <div class="template">
+            <div class="invoice">
+                <p>INVOICE</p>
+            </div>
+
+            <table width="100%">
+                <tr>
+                    <td style="padding-left: 5%; width: 75%;">Invoice Number:01</td>
+                    <td>Date:01-04-2023</td>
+                </tr>
+                <br>
+                <tr></tr>
+                <tr></tr>
+                <tr></tr>
+                <td style="padding-left: 5%; width: 75%;">invoice to:<input type="text" placeholder="Enter your name">
+                </td>
+            </table>
+            <br><br><br>
+
+            <table border="1" width="100%">
+                <tr class="tr">
+                    <th>QTY</th>
+                    <th>product description</th>
+                    <th>price</th>
+                    <!-- <th>total</th> -->
+                </tr>
+
+                <tr class="yellow tr">
+                    <td>
+                        <input type="text" class="s" id="jumbo">
+                    </td>
+                    <td class="ce">jumbo vada pav</td>
+                    <td class="ce">&#8377;20</td>
+                </tr>
+                <tr class="tr">
+                    <td>
+                        <input type="text" class="s" id="cheese">
+                    </td>
+                    <td class="ce">cheese vada pav</td>
+                    <td class="ce">&#8377;30</td>
+                </tr>
+                <tr class="yellow tr">
+                    <td>
+                        <input type="text" class="s" id="vip">
+                    </td>
+                    <td class="ce">vip vada pav</td>
+                    <td class="ce">&#8377;35</td>
+                </tr>
+                <tr class="tr">
+                    <td>
+                        <input type="text" class="s" id="godfather">
+                    </td>
+                    <td class="ce">Godfather vada pav</td>
+                    <td class="ce">&#8377;35</td>
+                </tr>
+                <tr class="yellow tr">
+                    <td>
+                        <input type="text" class="s" id="peri-peri">
+                    </td>
+                    <td class="ce">Peri Peri vada pav</td>
+                    <td class="ce">&#8377;35</td>
+                </tr>
+                <tr class="tr">
+                    <td>
+                        <input type="text" class="s" id="indi">
+                    </td>
+                    <td class="ce">Indi-Italia vada pav</td>
+                    <td class="ce">&#8377;40</td>
+                </tr>
+                <tr class="yellow tr">
+                    <td>
+                        <input type="text" class="s" id="jantar">
+                    </td>
+                    <td class="ce">Jantar Mantar vada pav</td>
+                    <td class="ce">&#8377;40</td>
+                </tr>
+                <tr class="tr">
+                    <td>
+                        <input type="text" class="s" id="tandoori">
+                    </td>
+                    <td class="ce">Tandoori vada pav</td>
+                    <td class="ce">&#8377;45</td>
+                </tr>
+                <tr class="yellow tr">
+                    <td>
+                        <input type="text" class="s" id="cold">
+                    </td>
+                    <td class="ce">Cold drink</td>
+                    <td class="ce">&#8377;20</td>
+                </tr>
+            </table>
+            <div class="total">
+                <table>
+                    <tr>
+                        <th class="ce">total : <span id="iteam"></span></th>
+                    </tr>
+                    <tr>
+                        <th class="ce">gst (18% include) : <span id="gst"></span></th>
+                    </tr>
+                    <tr>
+                        <th class="ce">discount (10%) : <span id="vadapav"></span></th>
+                    </tr>
+                    <tr>
+                        <th class="ce">grand-total : <span id="gtotal"></span></th>
+                    </tr>
+                </table>
+            </div>
+
+            <!-- <div>
+                Prepare the order it take 20 min
+            </div> -->
+
+            <img src="image/th.webp" alt="" class="vadapav" onclick="cal()">
+            <img src="image/onion.webp" alt="" class="onion">
+            <img src="image/discount.webp" alt="" class="tameto">
+
+        </div>
+
+        <div class="thanks">
+            <h1>THANKS FOR VISITING US</h1>
+            <br>
+            <p>ADDRESS:- UNIVERSITY ROAD,RAJKOT MUNJKA 360005</p>
+        </div>
+    </div>
+
+</body>
+<script src="code.js"></script>
+</html>
