@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>trafic light</title>
+</head>
+<style>
+html,
+body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+.main {
+    background-image: url(https://opengameart.org/sites/default/files/background-1_0.png);
+    background-repeat-x: no-repeat;
+    background-size: 103%;
+    background-repeat-y: repeat;
+    background-position-y: 27px;
+    animation: loopingRoad 250s linear infinite;
+    height: 100%;
+    width: 100%;
+    
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+
+/* @keyframes loopingRoad {
+    from {
+        background-position: 0 0;
+    }
+    to {
+        background-position: 0 -100000px;
+    } */
+/* } */
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+/* Sky Styling */
+.sky {
+    width: 100vw;
+    height: 100vh;
+    background-image: url(sky.jpeg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: absolute;
+}
+
+/* Tree Styling and positioning */
+.tree {
+    height: 100vh;
+    background-image: url(tree-removebg-preview\ \(1\).png);
+    background-repeat:no-repeat;
+    background-size: cover;
+}
+
+/* Track Styling and positioning */
+.track {
+    background-image: url(track.jpeg);
+    background-repeat: repeat-x;
+    position: absolute;
+    bottom: 0px;
+    width: 1000vw;
+    height: 20vh;
+    animation: trackanimation 6s linear infinite;
+}
+
+/* Car Styling and positioning */
+.car {
+    background-image: url(car-removebg-preview.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 17rem;
+    height: 4.699rem;
+    position: absolute;
+    bottom: 77px;
+    left: 396px;
+}
+
+/* Wheel's Styling and positioning */
+.wheel {
+    position: absolute;
+    animation: wheelanimation linear .6s infinite;
+}
+.wheel1 {
+    background-image: url(wheel1-removebg-preview.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    width: 46px;
+    height: 49px;
+    bottom: 71px;
+    left: 570px;
+}
+.wheel2 {
+    background-image: url(wheel2-removebg-preview.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 43px;
+    height: 44px;
+    bottom: 77px;
+    left: 433px;
+}
+
+/* Rotation of the wheels */
+@keyframes wheelanimation{
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+/* Moving the track backwards */
+@keyframes trackanimation {
+    100% {
+        transform: translate(-500vw);
+    }
+}
+
+</style>
+<body>
+    <!-- <div class="main" >
+
+        
+
+    </div>
+    -->
+	<div class="sky"> 
+		<div class="tree"></div> 
+		<div class="track"></div> 
+		<div class="car"></div> 
+		<div class=" wheel wheel1"></div> 
+		<div class="wheel wheel2"></div> 
+	</div> 
+
+
+</body>
+</html>
