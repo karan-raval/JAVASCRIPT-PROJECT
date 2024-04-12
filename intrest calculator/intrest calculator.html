@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, 
+								initial-scale=1.0">
+    <title>The Investment Calculator</title>
+    <!-- <link rel="stylesheet" href="style.css"> 
+     -->
+
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: #f4f4f4;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+        }
+
+        .container {
+            background-color: #fff;
+            border-radius: 10px;
+            box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+            padding: 40px;
+            width: 400px;
+            display: flex;
+            flex-direction: column;
+            text-align: center;
+        }
+
+        h1 {
+            color: #007bff;
+            margin-bottom: 20px;
+        }
+
+        .input-container {
+            margin-bottom: 20px;
+        }
+
+        label {
+            display: block;
+            margin-bottom: 5px;
+            color: #333;
+            font-weight: bold;
+        }
+
+        input[type="number"] {
+            width: 100%;
+            padding: 12px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            box-sizing: border-box;
+            margin-top: 5px;
+        }
+
+        button {
+            background-color: #007bff;
+            color: #fff;
+            border: none;
+            padding: 12px 20px;
+            cursor: pointer;
+            border-radius: 5px;
+            font-size: 16px;
+            margin-top: 10px;
+        }
+
+        button:hover {
+            background-color: #0056b3;
+        }
+
+        .result-container {
+            text-align: center;
+            margin-top: 20px;
+            font-size: 18px;
+            color: #333;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <h1>Investment Calculator</h1>
+        <div class="input-container">
+            <label for="initial-investment">
+                Initial Investment ($):
+            </label>
+            <input type="number" id="initial-investment" placeholder="Enter initial investment">
+        </div>
+        <div class="input-container">
+            <label for="interest-rate">
+                Annual Interest Rate (%):
+            </label>
+            <input type="number" id="interest-rate" placeholder="Enter annual interest rate">
+        </div>
+        <div class="input-container">
+            <label for="investment-years">
+                Number of Years:
+            </label>
+            <input type="number" id="investment-years" placeholder="Enter number of years">
+        </div>
+        <button id="calculate-button" type="button" onclick="intrest()">
+            Calculate
+        </button>
+        <div id="result" class="result-container" style="border: 1px solid; width: 400px; height: 30px;">
+            <span>total intrest=</span>
+        </div>
+    </div>
+</body>
+<script>
+
+function intrest()
+{
+var p=document.getElementById('initial-investment').value;
+var r=document.getElementById('interest-rate').value;
+var t=document.getElementById('investment-years').value;
+
+var total=p*r*t;
+
+document.getElementById('result').innerHTML=total;
+
+}
+</script>
+</html>
