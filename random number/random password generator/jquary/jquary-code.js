@@ -1,0 +1,10 @@
+$(document).ready(function(){
+    $("#icn").click(function(){
+        $("aside").toggleClass("hide");
+        $("header").toggleClass("hs");
+        $(".perent").toggleClass("hide");
+        $(".perent").toggleClass("hs");
+        $(".chart").toggleClass("hs");
+        $(".pp").toggleClass("hs");
+    });
+});

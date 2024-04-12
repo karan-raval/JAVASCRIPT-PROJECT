@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href=" css/adminpanel.css">
+    <link rel="stylesheet" href="mediaqury/media.css">
+    <script src="https://code.jquery.com/jquery-3.7.1.js"integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4=" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.4/Chart.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+        integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+        <link rel="stylesheet" href="login.html">
+        <link rel="stylesheet" href="login2.html">
+    <title>admin-panel-1</title>
+</head>
+<body>
+    <aside>
+        <div class="logo">
+            <img src="image/rnw-logo (1).png" alt="">
+        </div>
+        <div class="image">
+            <img src="image/karan raval.jpg.jpg" alt="">
+            <h2>karan Raval <br>
+                Full Stack Devloper</h2>
+        </div>
+        <div class="navbar">
+            <nav>
+                <ul>
+                    <li><i class="fa-solid fa-house"> HOME</i></li>
+                    <li><i class="fa-solid fa-chart-simple"> CHART</i></li>
+                    <li><i class="fa-brands fa-linkedin"> PROFILE</i></li>
+                    <li><i class="fa-solid fa-list-check"> PROJECTS</i></li>
+                    <li><i class="fa-solid fa-users"> SALES</i></li>
+                    <li><i class="fa-solid fa-users"> HELP-DESK</i></li>
+                    <button id="btn"> <a href="login.html">log out</a></button>
+                </ul>
+            </nav>
+        </div>
+    </aside>
+    <header>
+        <div>
+            <select class="selector">
+                <option> rwr1</option>
+                <option> rwr2</option>
+            </select>
+        </div>
+        <div class="searchbar">
+            <input type="text"  placeholder="search" class="serch" >
+        </div>
+        <div>
+            <i class="fa-solid fa-bars" id="icn"></i>
+        </div>
+    </header>
+    <div class="perent">
+        <div class="child"><i id="sicn" class="fa-brands fa-facebook"></i><span class="counter">100</span></div>
+        <div class="child"><i id="sicn2" class="fa-brands fa-instagram"></i><span class="counter">100</span></div>
+        <div class="child"><i id="sicn3" class="fa-brands fa-linkedin"></i><span class="counter">100</span></div>
+    </div>
+    <div class="chart">
+        <div class="barcharts">
+            <canvas id="myChart" style="width:100%;max-width:500px"></canvas>
+        </div>
+        <div class="multiplelinevhart">
+            <canvas id="myChart1" style="width:100%;max-width:500px"></canvas>
+        </div>
+    </div>
+    <div class="pp">
+        <div class="map">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d14766.763043524103!2d70.73200223759645!3d22.28970102956738!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3959cbe7a603e1b9%3A0x7da60912bfabbf4a!2sMunjka%2C%20Rajkot%2C%20Gujarat%20360005!5e0!3m2!1sen!2sin!4v1701336378721!5m2!1sen!2sin" width="500px" height="440px" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>
+        <div class="cal">
+            <div id="calendar" class="full"></div>
+        </div>
+    </div>
+</body>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/4.0.1/jquery.waypoints.min.js"
+    integrity="sha512-CEiA+78TpP9KAIPzqBvxUv8hy41jyI3f2uHi7DGp/Y/Ka973qgSdybNegWFciqh6GrN2UePx2KkflnQUbUhNIA=="
+    crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+<script src="jquary/jquery.counterup.min.js"></script>
+<script src="jquary/jquary-code.js"> </script>
+<script src="jquary/counterup.js"></script>
+<script src="jquary/barchart.js"></script>
+<script src="jquary/multipul line.js"></script>
+<script src="jquary/calender.js"></script>
+    <!-- calender Plugin CSS -->
+    <link href="calender/vanilla-calendar.min.css" rel="stylesheet">
+    <link href="calender/dark.min.css" rel="stylesheet">
+    <!-- calender  Plugin JS -->
+    <script src="calender/vanilla-calendar.min.js" defer></script>
+
+</html>

@@ -1,0 +1,67 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>random password generator</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+    <body>
+        <div class="wrapper"></div>
+        <h2 id="status" style="color: #ee7e6a;">Random Password Generator</h2>
+        <div>
+            <input type="text" readonly id="generated-captcha">
+        </div>
+        <div>
+            <input type="text" id="entered-captcha" placeholder="Enter the password..">
+        </div>
+        <button type="button" onclick="check()">
+            check
+        </button>
+        <button type="button" onclick="generate()" id="gen">
+            Generate New
+        </button>
+
+
+</body>
+<script>
+          var chars = "0123456789ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz";
+        var string_length = 8;
+        var randomstring = '';
+        for (var i=0; i<string_length; i++) {
+            var rnum = Math.floor(Math.random() * chars.length);
+            randomstring += chars.substring(rnum,rnum+1);
+        }
+        console.log(randomstring);
+        document.getElementById('generated-captcha').value=randomstring;
+        
+        function check()
+        {
+            var entered=document.getElementById('entered-captcha').value;
+
+        if(randomstring == entered)
+        {
+            window.location.replace("adminpanel -1.html");
+        }
+        else
+        {
+            alert("please enter right password")
+        }
+        }
+
+        function generate()
+        {
+            var chars = "0123456789ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz";
+        var string_length = 8;
+        var randomstring = '';
+        for (var i=0; i<string_length; i++) {
+            var rnum = Math.floor(Math.random() * chars.length);
+            randomstring += chars.substring(rnum,rnum+1);
+        }
+        console.log(randomstring);
+        document.getElementById('generated-captcha').value=randomstring;
+        }
+</script>
+<script src="https://code.jquery.com/jquery-3.7.1.js" integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4=" crossorigin="anonymous"></script>
+</html>
