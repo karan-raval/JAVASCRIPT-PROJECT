@@ -1,0 +1,65 @@
+ body{
+    background-color: rgb(4, 29, 29);
+    font-family: 'Poppins', sans-serif;
+ }
+ .container{
+    width: 360px;
+    padding: 33px;
+    text-align: center;
+    background-color:rebeccapurple;
+    margin-left: 33%;
+    margin-top: 5px;
+    border-radius: 20px;
+ }
+ input{
+    width: 270px;
+    padding: 8px;
+    border: 2px solid rgb(6, 145, 145);
+    outline: none;
+    font-size: 19px;
+    border-radius: 20px;
+
+ }
+ button{
+    width: 60px;
+    height: 41px;
+    background-color: rgb(4, 29, 29);
+    color: white;
+    border: none;
+    cursor: pointer;
+    outline: none;
+    border-radius: 2px;
+    font-size: 19px;
+    border-radius: 20px;
+
+ }
+ button:hover{
+    background: #ff96ad;
+    box-shadow: 0 0 5px #ff96ad,0 0 25px#ff96ad, 0 0 50px #ff96ad, 0 0 208px #ff96ad;
+ }
+ .text ul{
+    position: relative;
+    background-color: rgb(5, 31, 31);
+    color: white;
+    font-size: 19px;
+    padding: 7px;
+    text-align: left;
+    border-radius: 10px;
+ }
+
+ .text ul:hover{
+    border: 2px solid #ff96ad;
+color: #fbff96;
+background-color: #17181c;
+background:transparent ;
+ }
+ .text ul i{
+    position: absolute;
+    right: 10px;
+    top: 13px;
+    cursor: pointer;
+ }
+
+ .text ul i:hover{
+   color: red;
+ }
