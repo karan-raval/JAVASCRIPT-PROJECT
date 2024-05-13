@@ -1,0 +1,194 @@
+* {
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+}
+
+.subheader {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    height: 70px;
+    background-color: white;
+    /* border: 1px solid black; */
+    box-shadow: 50px;
+}
+
+.navbar-braand img {
+    width: 80px;
+    height: 30px;
+}
+
+.navbar-nav {
+    margin-left: 82%;
+    background-color: white;
+}
+
+.main {
+    width: 100%;
+    height: 700px;
+    border: 1px solid;
+    background-color: #F5F5F5;
+
+}
+
+.dropdown-toggle {
+    color: black;
+    text-decoration: none;
+}
+
+.sup {
+    margin-top: 60px;
+    margin-left: 20px;
+    background-color: white;
+    width: 650px;
+    height: 150px;
+    /* border: 1px solid; */
+    border-radius: 20px;
+    box-shadow: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.sup img {
+    /* margin-top: 25px; */
+    /* margin-left: 20px; */
+    width: 110px;
+    height: 100px;
+    border-radius: 50px;
+}
+
+.details {
+    /* border: 1px solid black; */
+    width: 75%;
+    height: 150px;
+    position: relative;
+}
+
+.name {
+    position: absolute;
+    position: relative;
+    top: 20px;
+    left: 0%;
+    display: flex;
+    flex-direction: column;
+    /* border: 1px solid; */
+    width: 130px;
+    height: 50px;
+}
+
+.name .x {
+    position: absolute;
+    top: 20px;
+    font-weight: bolder;
+}
+
+.grid {
+    position: absolute;
+    position: relative;
+    top: -30px;
+    left: 29%;
+    display: flex;
+    flex-direction: column;
+    /* border: 1px solid; */
+    width: 130px;
+    height: 50px;
+}
+
+.grid .x {
+    position: absolute;
+    top: 20px;
+    font-weight: bolder;
+}
+
+.status {
+    position: absolute;
+    position: relative;
+    top: -80px;
+    left: 45%;
+    display: flex;
+    flex-direction: column;
+    /* border: 1px solid; */
+    width: 130px;
+    height: 50px;
+}
+
+.status .x {
+    position: absolute;
+    top: 20px;
+    font-weight: bolder;
+}
+
+.fee {
+    position: absolute;
+    position: relative;
+    top: -130px;
+    left: 70%;
+    display: flex;
+    flex-direction: column;
+    /* border: 1px solid; */
+    width: 130px;
+    height: 50px;
+}
+
+.fee .x {
+    position: absolute;
+    top: 20px;
+    font-weight: bolder;
+}
+
+.en {
+    position: absolute;
+    position: relative;
+    top: -110px;
+    left: 0%;
+    display: flex;
+    flex-direction: column;
+    /* border: 1px solid; */
+    width: 130px;
+    height: 50px;
+}
+
+.en .x {
+    position: absolute;
+    top: 20px;
+    font-weight: bolder;
+}
+
+.course {
+    position: absolute;
+    position: relative;
+    top: -160px;
+    left: 40%;
+    display: flex;
+    flex-direction: column;
+    /* border: 1px solid; */
+    width: 190px;
+    height: 50px;
+}
+
+.course .x {
+    position: absolute;
+    top: 20px;
+    font-weight: bolder;
+}
+
+#accordionFlushExample {
+    width: 700px;
+    top: 50%;
+    border-radius: 40px;
+    position: absolute;
+    right: 50px;
+    background-color: #f1c5c5;
+}
+
+
+
+.hd {
+    display: none;
+}
+
+.show {
+    display: block;
+}
