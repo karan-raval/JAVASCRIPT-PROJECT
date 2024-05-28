@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact-Form</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="wrapper">
+        <form class="form" onsubmit="return validation()" name="student" >
+            <div class="pageTitle title">Contact Form </div>
+            <div class="secondaryTitle title">Please fill this form to sign up.</div>
+            <input type="text" class="name formEntry" placeholder="Enter Your Name" name="name" id="na" />
+            <input type="text" class="email formEntry" placeholder="Enter Your Email" name="email" id="em" />
+            <input type="text" class="email formEntry" placeholder="Enter Your Number" name="telle" id="num" />
+            <label style="color: #0e3721" for="terms" class="move">Gender:</label>
+            <input type="radio" class="" name="gender">Male
+            <input type="radio" class="" name="gender">Female
+
+            <input type="password" name="pass"  class="email formEntry" placeholder="Enter Your password" id="p">
+            <select name="opt" id="" class=" formEntry">
+                <option value="select your choice">select your course</option>
+                <option value="Full-stack devlopment">Full-stack devlopment</option>
+                <option value="Front-end devlopment">Front-end devlopment</option>
+                <option value="ui-ux devloper">ui-ux devloper</option>
+                <option value="AR-VR devloper">AR-VR devloper</option>
+            </select>
+            <label style="color: #0e3721" for="terms" class="move">Select your Birthdate:</label>
+
+            <input type="date" name="date" class="email formEntry" id="birth">
+            <input type="checkbox" class="termsConditions" value="Term" name="check">
+            <label style="color: #0e3721" for="terms"> I Accept the Terms of Use Privacy Policy.</label><br>
+            <button class="submit formEntry" id="setdata">Submit</button>
+        </form>
+    </div>
+</body>
+<script src="code.js"></script>
+</html>
